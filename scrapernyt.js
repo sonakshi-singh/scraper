@@ -12,7 +12,7 @@ axios(url)
 
     let covid = [];
     let county = [];
-
+    //Statewide total covid cases and deaths
     $("tbody>tr").each(function (i, elem) {
       if (i < 2) {
         covid.push({
@@ -21,7 +21,7 @@ axios(url)
         });
       }
     });
-
+    //Countywise covid cases and deaths
     $("#collapseDemographics > div > table:nth-child(1) > tbody>tr").each(
       function (i, elem) {
         if (i >= 0) {
